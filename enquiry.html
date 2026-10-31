@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - The Book Nook</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-book-open"></i>
+                    <span>The Book Nook</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Send Us an Enquiry</h1>
+            <p>Have a question or need help? Fill out the form below and we'll get back to you as soon as possible.</p>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="container">
+            <form class="enquiry-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" placeholder="Your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone number (optional)</label>
+                    <input type="tel" id="phone" placeholder="e.g. 021 123 4567 or 082 123 4567">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="book-club">Book Club Registration</option>
+                        <option value="author-event">Author Event Booking</option>
+                        <option value="reading-session">Children's Reading Session</option>
+                        <option value="general">General Enquiry</option>
+                        <option value="product">Product Enquiry</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="preferred-date">Preferred date (optional, for events and sessions)</label>
+                    <input type="date" id="preferred-date">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Enquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header"><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-btn-1">What events do you host?</button></h3>
+                    <div class="accordion-panel" id="faq-1" role="region" aria-labelledby="faq-btn-1"><p>We host book clubs, author events and children's reading sessions. Choose the matching subject in the form above to enquire or register.</p></div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header"><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-btn-2">When are you open?</button></h3>
+                    <div class="accordion-panel" id="faq-2" role="region" aria-labelledby="faq-btn-2"><p>Monday to Friday, 9:00 AM to 6:00 PM, and Saturday and Sunday, 10:00 AM to 4:00 PM.</p></div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header"><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-btn-3">Where can I find you?</button></h3>
+                    <div class="accordion-panel" id="faq-3" role="region" aria-labelledby="faq-btn-3"><p>We are at 45 Long Street, Cape Town, 8001. There is a map on the <a href="contact.html">Contact page</a>.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>The Book Nook</h4>
+                    <p>Your local independent bookstore since 2012. We bring stories to life.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="enquiry.html">Enquiry</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> 021-123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@thebooknook.co.za</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 45 Long Street, Cape Town</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Book Nook. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
